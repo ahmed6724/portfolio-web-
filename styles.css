@@ -275,3 +275,106 @@ footer {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+#experience {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#experience .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.job {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.job h3 {
+  color: #6c5ce7;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.job h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.job p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.job ul {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.job ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav .container {
+      flex-direction: column; /* Ensures the name and buttons stack */
+      align-items: flex-start; /* Aligns content to the left */
+      padding-left: 1rem;
+  }
+
+  nav h1 {
+      margin-bottom: 0.8rem; /* Adds spacing below the name */
+  }
+
+  nav ul {
+      flex-direction: row; /* Ensures buttons are in a row */
+      flex-wrap: wrap; /* Allows wrapping if buttons don't fit */
+      gap: 0.8rem; /* Adds spacing between buttons */
+      justify-content: flex-start; /* Aligns buttons to the left */
+  }
+
+  nav ul li a {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      text-align: center; /* Centers text inside buttons */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 480px) {
+  nav .container {
+      flex-direction: column; /* Ensures stacking for smaller screens */
+      align-items: flex-start;
+      padding-left: 1rem;
+  }
+
+  nav h1 {
+      margin-bottom: 0.6rem; /* Adjusts spacing for smaller screens */
+      font-size: 1.2rem;
+  }
+
+  nav ul {
+      flex-direction: row; /* Keeps buttons in a row */
+      flex-wrap: wrap; /* Allows wrapping */
+      gap: 0.6rem; /* Adjusts spacing between buttons */
+      justify-content: flex-start; /* Aligns buttons to the left */
+  }
+
+  nav ul li a {
+      font-size: 0.9rem; /* Reduces font size for smaller screens */
+      padding: 0.4rem 0.8rem; /* Adjusts padding for smaller buttons */
+  }
+}

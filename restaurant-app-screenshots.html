@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App Screenshots</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .screenshot-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .screenshot-gallery img {
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .screenshot-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            text-align: center;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Ahmed Elali</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="screenshots">
+        <div class="container">
+            <h2>Restaurant App Screenshots</h2>
+            <div class="screenshot-gallery">
+                <img src="screenshots/restaurant1.png" alt="Restaurant App Screenshot 1">
+                <img src="screenshots/restaurant2.png" alt="Restaurant App Screenshot 2">
+                <img src="screenshots/restaurant3.png" alt="Restaurant App Screenshot 3">
+                <img src="screenshots/restaurant4.png" alt="Restaurant App Screenshot 4">
+                <img src="screenshots/restaurant5.png" alt="Restaurant App Screenshot 5">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ahmed Elali. All rights reserved.</p>
+    </footer>
+</body>
+</html>
